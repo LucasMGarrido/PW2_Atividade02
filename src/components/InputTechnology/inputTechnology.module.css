@@ -1,0 +1,37 @@
+.container {
+	width: 100%;
+	max-width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	position: relative;
+	top: -25px;
+}
+
+.container input {
+	background-color: #262626;
+	flex-grow: 1;
+	padding: 0.8em;
+	border: 1px solid #0d0d0d;
+	border-radius: 10px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	color: #808080;
+	outline: none;
+}
+
+.container button {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 0.8em 1em;
+	border: none;
+	border-radius: 10px;
+	background-color: #1e6f9f;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+	color: #f2f2f2;
+}

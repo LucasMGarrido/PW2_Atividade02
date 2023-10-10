@@ -1,0 +1,65 @@
+.task {
+	display: flex;
+	align-items: flex-start;
+	background-color: #262626;
+	gap: 12px;
+	margin-top: 0.75em;
+	padding: 1em;
+	border: 1px solid #333333;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+}
+
+.task input {
+	position: absolute;
+	cursor: pointer;
+	opacity: 0;
+	width: 18px;
+	height: 18px;
+	z-index: 1;
+}
+
+.task input:checked ~ .check {
+	border: 3px solid #5e60ce;
+	background-color: #5e60ce;
+}
+
+.task input:checked ~ .check::after {
+	content: '';
+	position: absolute;
+	transform: rotate(40deg);
+	width: 5px;
+	height: 10px;
+	border: solid #f2f2f2;
+	border-width: 0 3px 3px 0;
+	left: 3px;
+}
+
+.task input:checked + label + p {
+	color: #808080;
+	text-decoration: line-through;
+}
+
+.check {
+	position: relative;
+	display: block;
+	height: 20px;
+	min-width: 20px;
+	border: 3px solid #4ea8de;
+	border-radius: 50%;
+}
+
+.task p {
+	flex-grow: 1;
+	font-size: 16px;
+	font-weight: 400;
+	color: #f2f2f2;
+}
+
+.task button {
+	background-color: transparent;
+	border: none;
+	padding: 0.3em;
+	font-size: 20px;
+	color: #808080;
+}
